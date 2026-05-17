@@ -380,12 +380,14 @@ body {
   padding: 18px 0;
   background: var(--gold);
   overflow: hidden;
+  width: 100%;
 }
 .strip-inner {
   display: flex;
   gap: 60px;
   animation: ticker 30s linear infinite;
   white-space: nowrap;
+  width: max-content;
 }
 .strip span {
   font-size: 10px;

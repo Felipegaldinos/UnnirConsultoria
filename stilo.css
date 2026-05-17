@@ -308,20 +308,60 @@ nav.solid {
 @media (max-width: 860px) {
   #hero {
     grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+  
   }
   .hero-left {
     padding: 100px 24px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .hero-right {
     height: 50vw;
-    min-height: 240px;
+    min-height: 260px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+   .hero-title,
+  .hero-tagline,
+  .hero-sub,
+  .hero-eyebrow {
+    text-align: center;
   }
   .hero-left::after {
     display: none;
   }
+  .hero-btns {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   .hero-badge {
     left: 24px;
     bottom: 24px;
+     justify-content: center;
+    text-align: center;
+  }
+   .hero-badge-line {
+    display: none;
+  }
+   .hero-right img,
+  .hero-logo-img {
+    margin: auto;
+  }
+  .hero-right div[style*="position:absolute"]{
+    right: 50% !important;
+    transform: translateX(50%);
+    text-align: center !important;
+  }
+
+  .hero-right div[style*="width:40px"]{
+    margin: 8px auto 0 auto !important;
   }
 }
 

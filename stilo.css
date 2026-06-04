@@ -156,8 +156,8 @@ body {
   font-style: normal;
 }
 .hero-sub {
-  font-size: 12px;
-  color: var(--muted);
+  font-size: 15px;
+  color: var(--white);
   margin-bottom: 40px;
   opacity: 0;
   animation: fadeUp 0.7s 1s forwards;
@@ -279,6 +279,12 @@ body {
     height: 280px;
     object-fit: contain;
   }
+  .brasil{
+    margin-right: 25px;
+  }
+  .traco{
+    display: none;
+  }
 }
 
 /* ========================================
@@ -374,7 +380,7 @@ body {
 }
 
 /* ========================================
-   TICKER STRIP
+   quem somos
    ======================================== */
 .strip {
   padding: 18px 0;
@@ -490,6 +496,9 @@ body {
 }
 
 @media (max-width: 860px) {
+  .text-j{
+    text-align: justify;
+  }
   .split {
     grid-template-columns: 1fr;
   }
@@ -588,7 +597,7 @@ body {
 }
 
 /* ========================================
-   PARTNERS — LIGHT SECTION
+   SOCIAS
    ======================================== */
 #partners {
   background: var(--light-bg);
@@ -686,7 +695,7 @@ body {
   bottom: 32px;
   left: 32px;
   font-family: "Cormorant Garamond", serif;
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 700;
   color: var(--white);
   z-index: 3;
@@ -748,10 +757,16 @@ body {
     min-height: 340px;
     order: 1;
   }
+  .partner-content h3{
+    text-align: center;
+  }
   /* Garante que no mobile a foto sempre vem primeiro */
   .partner-block .partner-content {
     order: 2;
     padding: 36px 24px;
+  }
+  .partner-bio{
+    text-align: justify;
   }
   /* Segundo bloco (Priscila): reordena foto/texto no mobile */
   .partner-block:last-of-type .partner-photo-wrap {
@@ -868,7 +883,7 @@ body {
 }
 
 /* ========================================
-   ROADMAP — dark
+   PORTIFOLIO
    ======================================== */
 #roadmap {
   background: var(--black);
@@ -1238,7 +1253,7 @@ body {
 }
 
 /* ========================================
-   BADGES — dark
+   CREDENCIAIS
    ======================================== */
 #badges {
   background: var(--darker);
@@ -1264,9 +1279,7 @@ body {
   margin-bottom: 24px;
 }
 .badge-box {
-  background: var(--card);
-  border: 1px solid var(--border);
-  padding: 22px 26px;
+  padding: 2px 26px;
   text-align: center;
   display: inline-flex;
   flex-direction: column;
@@ -1315,6 +1328,7 @@ body {
   .badges-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+    text-align: center;
   }
   .badge-box {
     width: 100%;
@@ -1322,7 +1336,7 @@ body {
 }
 
 /* ========================================
-   STEPS — gold + light
+   PREVIA CTA
    ======================================== */
 #steps {
   background: var(--light-bg);
@@ -1408,6 +1422,14 @@ body {
   .steps-split {
     grid-template-columns: 1fr;
   }
+  .steps-left{
+  place-items: center; 
+  text-align: center;
+
+  }
+  .eyebrow,.sec-title{
+    text-align: center;
+  }
   .steps-left,
   .steps-right {
     padding: 50px 24px;
@@ -1420,7 +1442,7 @@ body {
 }
 
 /* ========================================
-   CTA BANNER — dark
+   CTA 
    ======================================== */
 #cta {
   position: relative;
@@ -1592,8 +1614,13 @@ footer {
   footer {
     padding: 40px 20px;
   }
+  .footer-tag{
+    text-align: center;
+
+   }
   .footer-copy {
-    text-align: left;
+    text-align: center;
+    margin-left: 60px;
   }
 }
 

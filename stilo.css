@@ -540,7 +540,7 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, transparent 70%, var(--light-bg));
+  background: linear-gradient(to right, transparent 90%, var(--light-bg));
   pointer-events: none;
 }
 .split-content {

@@ -500,8 +500,10 @@ body {
 }
 
 @media (max-width: 860px) {
-  .text-j{
+  .text-j {
     text-align: justify;
+    hyphens: auto;
+    word-break: break-word;
   }
   .split {
     grid-template-columns: 1fr;
@@ -513,7 +515,14 @@ body {
     display: none;
   }
   .split-content {
-    padding: 48px 24px;
+    padding: 40px 20px;
+  }
+
+  /* Reduz o título da seção About no mobile */
+  #about .sec-title {
+    font-size: clamp(26px, 7vw, 40px);
+    word-break: break-word;
+    hyphens: auto;
   }
 }
 
